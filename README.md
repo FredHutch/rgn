@@ -1,4 +1,7 @@
 # Recurrent Geometric Networks
+
+[![Docker Repository on Quay](https://quay.io/repository/fhcrc-microbiome/rgn/status "Docker Repository on Quay")](https://quay.io/repository/fhcrc-microbiome/rgn)
+
 This is the reference (TensorFlow) implementation of recurrent geometric networks (RGNs), described in the paper [End-to-end differentiable learning of protein structure](https://www.cell.com/cell-systems/fulltext/S2405-4712(19)30076-6). 
 
 ## Installation and requirements
