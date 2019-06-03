@@ -13,7 +13,8 @@ RUN cd /usr/local/ && \
     autoconf && \
     ./configure && \
     make && \
-    make check
+    make check && \
+    ln -s /usr/local/easel/miniapps/* /usr/local/bin/
 
 # Add repository data
 RUN mkdir /usr/local/rgn
