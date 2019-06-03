@@ -6,6 +6,15 @@ RUN apt update && \
     apt-get install -y wget unzip python2.7 python-pip hmmer
 RUN pip install tensorflow>=1.4.0 setproctitle
 
+# Install easel
+RUN cd /usr/local/ && \
+    git clone https://github.com/EddyRivasLab/easel && \
+    cd easel && \
+    autoconf && \
+    ./configure && \
+    make && \
+    make check
+
 # Add repository data
 RUN mkdir /usr/local/rgn
 ADD ./ /usr/local/rgn/
