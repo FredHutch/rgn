@@ -3,7 +3,7 @@ LABEL MAINTAINER=sminot@fredhutch.org
 
 # Install prerequisites
 RUN apt update && \
-    apt-get install -y wget unzip python2.7 python-pip hmmer git
+    apt-get install -y wget unzip python2.7 python-pip hmmer git autoconf
 RUN pip install tensorflow>=1.4.0 setproctitle
 
 # Install easel
